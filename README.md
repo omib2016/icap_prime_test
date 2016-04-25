@@ -11,13 +11,14 @@ b. The service once initialized supports querying of prime numbers using RESTful
   4. http://localhost:8080/getPrimeNumbersWithLimitAndRange?max=100&limit=20  
   5. http://localhost:8080/getPrimeNumbersInRange?min=10&max=100  
   6. http://localhost:8080/getPrimeNumbersInRangeAndLimit?min=11&max=97&limit=100&inclusive=true  
+
 c. I have leveraged Streams API from JDK 8 to generate the prime numbers.  
 
 # Build & deployment notes.  
 a. Clone the project using a Git client of your choice and then import the project (using an IDE of your choice) as a Maven project.This is required to ensure that all required project dependencies(external libabries) are downloaded using Maven.  
 b. Run "mvn clean install" from command line or directly from your IDE.  
 c. Post a successful build - run "mvn spring-boot:run" from command line or run PrimeNumberApp.main() method from an IDE. Spring boot will build the application and deploy to the war to the packaged web container(tomcat) and initialize the service.  
-d. One can invoke the service using the URI's as shown above from a browser.  
+d. One can then invoke the service using the URI's as shown above from a browser.  
 
  
 
