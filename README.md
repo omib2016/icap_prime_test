@@ -1,6 +1,6 @@
 # Project requirements
-a. JDK 1.8.0_40 or higher 
-b. Maven (v3.2.1 or higher)  
+a. JDK 1.8.0_40 or higher   
+b. Maven (v3.2.1 or higher)    
 
 # Implementation notes
 a. For quick development , I have leveraged spring-boot-starter-web libraries which enables developement of RESTful services with minimal effort.A production ready application however might want to leverage regular spring-mvc librabries and custom configuration along with appropriate property files - which I have avoided since this a sample test app.
